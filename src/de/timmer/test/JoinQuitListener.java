@@ -9,14 +9,14 @@ public class JoinQuitListener implements Listener {
 	@EventHandler
 	public void a(PlayerJoinEvent e){
 		if(e.getPlayer().getName().equalsIgnoreCase("timmer2002")){
-			e.setJoinMessage(e.getPlayer().getName()+" ");
+			e.setJoinMessage("§4"+e.getPlayer().getName()+" ist dem Spiel beigetreten ");
 		}else{
-			e.setJoinMessage(e.getPlayer().getDisplayName()+" ");
+			e.setJoinMessage(e.getPlayer().getDisplayName()+" ist dem Spiel beigetreten ");
 		}
 		
 	}
 	@EventHandler
 	public void a(PlayerQuitEvent e){
-		e.setQuitMessage(e.getPlayer().getDisplayName()+" ");
+		e.setQuitMessage("§6"+e.getPlayer().getDisplayName()+" hat das Spiel verlassen ");
 	}
 }
