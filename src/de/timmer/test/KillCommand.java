@@ -16,10 +16,11 @@ public class KillCommand implements CommandExecutor {
 			
 			if(args.length == 0) {
 				player.setHealth(0.0);
-				player.sendMessage("�4du warst so doff und hast dich selbst gekillt");
+				player.sendMessage("§4du warst so doff und hast dich selbst gekillt");
 			}else if(args.length == 1){
 				Player xd = Bukkit.getPlayer(args[0]); 
 				xd.setHealth(0.0);
+				player.sendMessage("§6Du hast "+xd.getName()+" getkillt.");
 			}
 		}
 		return false;
