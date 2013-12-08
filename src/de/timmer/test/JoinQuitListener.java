@@ -9,7 +9,7 @@ public class JoinQuitListener implements Listener {
 	@EventHandler
 	public void a(PlayerJoinEvent e){
 		if(e.getPlayer().getName().equalsIgnoreCase("timmer2002")){
-			e.setJoinMessage("ง4"+e.getPlayer().getName()+" ist dem Spiel beigetreten ");
+			e.setJoinMessage("ยง4"+e.getPlayer().getName()+" ist dem Spiel beigetreten ");
 		}else{
 			e.setJoinMessage(e.getPlayer().getDisplayName()+" ist dem Spiel beigetreten ");
 		}
@@ -17,6 +17,6 @@ public class JoinQuitListener implements Listener {
 	}
 	@EventHandler
 	public void a(PlayerQuitEvent e){
-		e.setQuitMessage("ง6"+e.getPlayer().getDisplayName()+" hat das Spiel verlassen ");
+		e.setQuitMessage("ยง6"+e.getPlayer().getDisplayName()+" hat das Spiel verlassen ");
 	}
 }

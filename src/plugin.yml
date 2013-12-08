@@ -2,3 +2,5 @@ main:de.timmer.test.Timmer
 version: 0.1
 name: Test
 author:[scholzi100,timmer2002]
+commands:
+  kill:
